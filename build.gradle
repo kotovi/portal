@@ -1,0 +1,55 @@
+plugins {
+	id 'org.springframework.boot' version '2.2.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+
+group = 'ru.geekbase'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'com.google.cloud:google-cloud-translate:1.95.6'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	compile('org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.3.2.RELEASE')
+	compile("org.springframework.boot:spring-boot-starter-actuator")
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-integration'
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.session:spring-session-jdbc'
+	compile('org.projectlombok:lombok')
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'mysql:mysql-connector-java'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	compile 'org.jsoup:jsoup:1.10.1'
+	compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+	compile("org.springframework.boot:spring-boot-starter-websocket")
+	compile("org.webjars:webjars-locator-core")
+	compile("org.webjars:sockjs-client:1.0.2")
+	compile("org.webjars:stomp-websocket:2.3.3")
+	compile("org.owasp.esapi:esapi:2.2.0.0")
+	compile group: 'com.ibm.icu', name: 'icu4j', version: '51.1'
+	implementation("io.springfox:springfox-boot-starter:3.0.0")
+
+}
+
+bootJar{
+	baseName = 'portal'
+	version = '1.1'
+}

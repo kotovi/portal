@@ -1,0 +1,5 @@
+package ru.geekbase.portal.dto;
+
+public enum ObjectType {
+    LECTION, COURCE, COURCEFORSTUDENTS,SEMINAR,SEMINARFORSTUDENTS,SEMINARLIST,SEMINARFORLIST
+}

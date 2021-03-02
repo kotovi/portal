@@ -1,0 +1,92 @@
+
+h1{
+    color: #4a2bff;
+}
+
+h2{
+    color: #ff171c;
+}
+
+footer{
+    margin-top:60px;
+}
+.customModal {
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.4);
+    left: calc(50vw - 300px);
+    position: absolute;
+    z-index: 999;
+    width: 600px;
+    top: 20vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.customModal .customModalTitle {
+    background-color: #eee;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 1.5em;
+}
+.customModal .customModalTitle .close {
+    line-height: 32px;
+    color: #5c4084;
+}
+.customModal .customModalBody {
+    background-color: #fff;
+    padding: 8px 12px;
+    text-align: left;
+    padding: 12px;
+}
+.customModal .customModalFooter {
+    background-color: #eee;
+    padding: 4px 12px;
+    text-align: left;
+}
+.btn {
+    outline: none !important;
+}
+
+.btn.btn-primary {
+    background-color: #D0DB68;
+    border-color: #D0DB68;
+    outline: none;
+}
+.btn.btn-primary:hover {
+    background-color: #4ECA78;
+    border-color: #4ECA78;
+}
+.btn.btn-primary:active, .btn.btn-primary:focus {
+    background-color: #4ECA78;
+    border-color: #4ECA78;
+}
+.btn.btn-primary .fa {
+    padding-right: 4px;
+}
+
+.modal-backdrop {
+    background: rgba(250, 250, 250, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+.modal-dialog {
+    width: 30rem;
+    background: rgb(255, 255, 255);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.3rem;
+}
+.modal-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: rgb(100, 100, 100);
+}
+.modal-body {
+    color: rgb(180, 180, 180);
+}

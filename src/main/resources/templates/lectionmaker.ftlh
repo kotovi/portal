@@ -1,0 +1,21 @@
+<#import "parts/common.ftlh" as c>
+<#import "parts/footer.ftlh" as f>
+
+<@c.page>
+    <script type="text/javascript">
+        var courceId= ${courceId};
+        var lectionCount= ${lectionCount};
+        var testEnable= ${testEnable};
+        var courceName= "${courceName}";
+    </script>
+<#noparse>
+    <div class="container">
+        <div class="starter-template">
+            <div id="app"></div>
+            <script src="/js/authentificated/lectionmaker.js"></script>
+        </div>
+    </div>
+</#noparse>
+</@c.page>
+<@f.page>
+</@f.page>
